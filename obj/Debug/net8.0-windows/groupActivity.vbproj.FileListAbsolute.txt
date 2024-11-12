@@ -1,0 +1,17 @@
+C:\Users\User38\Desktop\pizza\groupActivity\bin\Debug\net8.0-windows\groupActivity.exe
+C:\Users\User38\Desktop\pizza\groupActivity\bin\Debug\net8.0-windows\groupActivity.deps.json
+C:\Users\User38\Desktop\pizza\groupActivity\bin\Debug\net8.0-windows\groupActivity.runtimeconfig.json
+C:\Users\User38\Desktop\pizza\groupActivity\bin\Debug\net8.0-windows\groupActivity.dll
+C:\Users\User38\Desktop\pizza\groupActivity\bin\Debug\net8.0-windows\groupActivity.pdb
+C:\Users\User38\Desktop\pizza\groupActivity\obj\Debug\net8.0-windows\groupActivity.Form1.resources
+C:\Users\User38\Desktop\pizza\groupActivity\obj\Debug\net8.0-windows\groupActivity.Resources.resources
+C:\Users\User38\Desktop\pizza\groupActivity\obj\Debug\net8.0-windows\groupActivity.vbproj.GenerateResource.cache
+C:\Users\User38\Desktop\pizza\groupActivity\obj\Debug\net8.0-windows\groupActivity.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\User38\Desktop\pizza\groupActivity\obj\Debug\net8.0-windows\groupActivity.AssemblyInfoInputs.cache
+C:\Users\User38\Desktop\pizza\groupActivity\obj\Debug\net8.0-windows\groupActivity.AssemblyInfo.vb
+C:\Users\User38\Desktop\pizza\groupActivity\obj\Debug\net8.0-windows\groupActivity.vbproj.CoreCompileInputs.cache
+C:\Users\User38\Desktop\pizza\groupActivity\obj\Debug\net8.0-windows\groupActivity.dll
+C:\Users\User38\Desktop\pizza\groupActivity\obj\Debug\net8.0-windows\refint\groupActivity.dll
+C:\Users\User38\Desktop\pizza\groupActivity\obj\Debug\net8.0-windows\groupActivity.pdb
+C:\Users\User38\Desktop\pizza\groupActivity\obj\Debug\net8.0-windows\groupActivity.genruntimeconfig.cache
+C:\Users\User38\Desktop\pizza\groupActivity\obj\Debug\net8.0-windows\ref\groupActivity.dll
