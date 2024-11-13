@@ -25,11 +25,11 @@ Partial Class Form1
         Dim resources As System.ComponentModel.ComponentResourceManager = New System.ComponentModel.ComponentResourceManager(GetType(Form1))
         Button1 = New Button()
         btnHint = New Button()
-        Label1 = New Label()
+        lbl_answer = New Label()
         lblLives = New Label()
         PictureBox1 = New PictureBox()
         lblDescription = New Label()
-        description = New Label()
+        lbl_description = New Label()
         btnGiveUp = New Button()
         CType(PictureBox1, ComponentModel.ISupportInitialize).BeginInit()
         SuspendLayout()
@@ -55,16 +55,16 @@ Partial Class Form1
         btnHint.Text = "Hint"
         btnHint.UseVisualStyleBackColor = False
         ' 
-        ' Label1
+        ' lbl_answer
         ' 
-        Label1.AutoSize = True
-        Label1.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(297, 240)
-        Label1.Margin = New Padding(4, 0, 4, 0)
-        Label1.Name = "Label1"
-        Label1.Size = New Size(168, 55)
-        Label1.TabIndex = 2
-        Label1.Text = "---------"
+        lbl_answer.AutoSize = True
+        lbl_answer.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lbl_answer.Location = New Point(297, 240)
+        lbl_answer.Margin = New Padding(4, 0, 4, 0)
+        lbl_answer.Name = "lbl_answer"
+        lbl_answer.Size = New Size(168, 55)
+        lbl_answer.TabIndex = 2
+        lbl_answer.Text = "---------"
         ' 
         ' lblLives
         ' 
@@ -98,16 +98,16 @@ Partial Class Form1
         lblDescription.TabIndex = 5
         lblDescription.Text = "Definition:"
         ' 
-        ' description
+        ' lbl_description
         ' 
-        description.AutoSize = True
-        description.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        description.Location = New Point(343, 347)
-        description.Margin = New Padding(4, 0, 4, 0)
-        description.Name = "description"
-        description.Size = New Size(69, 25)
-        description.TabIndex = 6
-        description.Text = "sample"
+        lbl_description.AutoSize = True
+        lbl_description.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
+        lbl_description.Location = New Point(343, 347)
+        lbl_description.Margin = New Padding(4, 0, 4, 0)
+        lbl_description.Name = "lbl_description"
+        lbl_description.Size = New Size(69, 25)
+        lbl_description.TabIndex = 6
+        lbl_description.Text = "sample"
         ' 
         ' btnGiveUp
         ' 
@@ -127,11 +127,11 @@ Partial Class Form1
         AutoScaleMode = AutoScaleMode.Font
         ClientSize = New Size(774, 563)
         Controls.Add(btnGiveUp)
-        Controls.Add(description)
+        Controls.Add(lbl_description)
         Controls.Add(lblDescription)
         Controls.Add(PictureBox1)
         Controls.Add(lblLives)
-        Controls.Add(Label1)
+        Controls.Add(lbl_answer)
         Controls.Add(btnHint)
         Controls.Add(Button1)
         Margin = New Padding(4, 5, 4, 5)
@@ -144,11 +144,11 @@ Partial Class Form1
 
     Friend WithEvents Button1 As Button
     Friend WithEvents btnHint As Button
-    Friend WithEvents Label1 As Label
+    Friend WithEvents lbl_answer As Label
     Friend WithEvents lblLives As Label
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents lblDescription As Label
-    Friend WithEvents description As Label
+    Friend WithEvents lbl_description As Label
     Friend WithEvents btnGiveUp As Button
 
 End Class

@@ -16,7 +16,7 @@ Imports System.Reflection
 <Assembly: System.Reflection.AssemblyCompanyAttribute("groupActivity"),  _
  Assembly: System.Reflection.AssemblyConfigurationAttribute("Debug"),  _
  Assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0"),  _
- Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+e270e97698909c4593bf9927b2e20a6c154422ea"),  _
+ Assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+332b4744f4ee5d814b7d91da633f9bf93c128110"),  _
  Assembly: System.Reflection.AssemblyProductAttribute("groupActivity"),  _
  Assembly: System.Reflection.AssemblyTitleAttribute("groupActivity"),  _
  Assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0"),  _
