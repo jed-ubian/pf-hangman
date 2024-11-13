@@ -12,8 +12,8 @@
       }
     ],
     "additionalProbingPaths": [
-      "C:\\Users\\User38\\.dotnet\\store\\|arch|\\|tfm|",
-      "C:\\Users\\User38\\.nuget\\packages"
+      "C:\\Users\\ACER NITRO\\.dotnet\\store\\|arch|\\|tfm|",
+      "C:\\Users\\ACER NITRO\\.nuget\\packages"
     ],
     "configProperties": {
       "System.Runtime.Serialization.EnableUnsafeBinaryFormatterSerialization": true,

@@ -36,7 +36,8 @@ Partial Class Form1
         ' 
         ' Button1
         ' 
-        Button1.Location = New Point(247, 239)
+        Button1.Location = New Point(353, 398)
+        Button1.Margin = New Padding(4, 5, 4, 5)
         Button1.Name = "Button1"
         Button1.Size = New Size(0, 0)
         Button1.TabIndex = 0
@@ -46,9 +47,10 @@ Partial Class Form1
         ' btnHint
         ' 
         btnHint.BackColor = SystemColors.ActiveCaption
-        btnHint.Location = New Point(271, 277)
+        btnHint.Location = New Point(387, 462)
+        btnHint.Margin = New Padding(4, 5, 4, 5)
         btnHint.Name = "btnHint"
-        btnHint.Size = New Size(86, 27)
+        btnHint.Size = New Size(123, 45)
         btnHint.TabIndex = 1
         btnHint.Text = "Hint"
         btnHint.UseVisualStyleBackColor = False
@@ -57,27 +59,30 @@ Partial Class Form1
         ' 
         Label1.AutoSize = True
         Label1.Font = New Font("Segoe UI", 20.25F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        Label1.Location = New Point(208, 144)
+        Label1.Location = New Point(297, 240)
+        Label1.Margin = New Padding(4, 0, 4, 0)
         Label1.Name = "Label1"
-        Label1.Size = New Size(116, 37)
+        Label1.Size = New Size(168, 55)
         Label1.TabIndex = 2
         Label1.Text = "---------"
         ' 
         ' lblLives
         ' 
         lblLives.AutoSize = True
-        lblLives.Location = New Point(53, 23)
+        lblLives.Location = New Point(76, 38)
+        lblLives.Margin = New Padding(4, 0, 4, 0)
         lblLives.Name = "lblLives"
-        lblLives.Size = New Size(36, 15)
+        lblLives.Size = New Size(54, 25)
         lblLives.TabIndex = 3
         lblLives.Text = "Lives:"
         ' 
         ' PictureBox1
         ' 
         PictureBox1.Image = CType(resources.GetObject("PictureBox1.Image"), Image)
-        PictureBox1.Location = New Point(12, 12)
+        PictureBox1.Location = New Point(17, 20)
+        PictureBox1.Margin = New Padding(4, 5, 4, 5)
         PictureBox1.Name = "PictureBox1"
-        PictureBox1.Size = New Size(35, 33)
+        PictureBox1.Size = New Size(50, 55)
         PictureBox1.SizeMode = PictureBoxSizeMode.StretchImage
         PictureBox1.TabIndex = 4
         PictureBox1.TabStop = False
@@ -86,9 +91,10 @@ Partial Class Form1
         ' 
         lblDescription.AutoSize = True
         lblDescription.LiveSetting = Automation.AutomationLiveSetting.Polite
-        lblDescription.Location = New Point(233, 187)
+        lblDescription.Location = New Point(333, 312)
+        lblDescription.Margin = New Padding(4, 0, 4, 0)
         lblDescription.Name = "lblDescription"
-        lblDescription.Size = New Size(62, 15)
+        lblDescription.Size = New Size(93, 25)
         lblDescription.TabIndex = 5
         lblDescription.Text = "Definition:"
         ' 
@@ -96,9 +102,10 @@ Partial Class Form1
         ' 
         description.AutoSize = True
         description.Font = New Font("Segoe UI", 9F, FontStyle.Regular, GraphicsUnit.Point, CByte(0))
-        description.Location = New Point(240, 208)
+        description.Location = New Point(343, 347)
+        description.Margin = New Padding(4, 0, 4, 0)
         description.Name = "description"
-        description.Size = New Size(45, 15)
+        description.Size = New Size(69, 25)
         description.TabIndex = 6
         description.Text = "sample"
         ' 
@@ -106,18 +113,19 @@ Partial Class Form1
         ' 
         btnGiveUp.BackColor = Color.IndianRed
         btnGiveUp.ForeColor = SystemColors.ControlLightLight
-        btnGiveUp.Location = New Point(170, 277)
+        btnGiveUp.Location = New Point(243, 462)
+        btnGiveUp.Margin = New Padding(4, 5, 4, 5)
         btnGiveUp.Name = "btnGiveUp"
-        btnGiveUp.Size = New Size(86, 27)
+        btnGiveUp.Size = New Size(123, 45)
         btnGiveUp.TabIndex = 7
         btnGiveUp.Text = "Give Up"
         btnGiveUp.UseVisualStyleBackColor = False
         ' 
         ' Form1
         ' 
-        AutoScaleDimensions = New SizeF(7F, 15F)
+        AutoScaleDimensions = New SizeF(10F, 25F)
         AutoScaleMode = AutoScaleMode.Font
-        ClientSize = New Size(542, 338)
+        ClientSize = New Size(774, 563)
         Controls.Add(btnGiveUp)
         Controls.Add(description)
         Controls.Add(lblDescription)
@@ -126,6 +134,7 @@ Partial Class Form1
         Controls.Add(Label1)
         Controls.Add(btnHint)
         Controls.Add(Button1)
+        Margin = New Padding(4, 5, 4, 5)
         Name = "Form1"
         Text = "Form1"
         CType(PictureBox1, ComponentModel.ISupportInitialize).EndInit()
