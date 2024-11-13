@@ -3,6 +3,7 @@
 Public Class Form1
     Dim lives As Integer = 6
     Dim points As Integer = 0
+    Dim hints As Integer = 3
     Dim currentWord As Integer
     Dim displayedAnswer() As String
     Dim words(2) As String
@@ -26,6 +27,8 @@ Public Class Form1
         resetDisplayedWord()
 
         lblLives.Text = "Lives: " & lives
+        lblScore.Text = "Score: " & points
+        lblHints.Text = "Hints: " & hints
     End Sub
 
     Private Function getWordIndex() As Integer
@@ -73,12 +76,7 @@ Public Class Form1
         If foundMatch Then
             displayWord = String.Join(" ", displayedAnswer)
             lbl_answer.Text = displayWord
-
-            If String.Join("", displayedAnswer) = word Then
-                MessageBox.Show("Congratulations! You've guessed the word.")
-                points += 5
-                resetDisplayedWord()
-            End If
+            CheckWinner(word)
         Else
             lives -= 1
             lblLives.Text = "Lives: " & lives
@@ -89,4 +87,66 @@ Public Class Form1
             Me.Close()
         End If
     End Sub
+
+    Private Sub btnNext_Click(sender As Object, e As EventArgs) Handles btnNext.Click
+        btnNext.Enabled = False
+        btnHint.Enabled = True
+        resetDisplayedWord()
+    End Sub
+
+    Private Sub btnHint_Click(sender As Object, e As EventArgs) Handles btnHint.Click
+        If hints > 0 Then
+            hints -= 1
+            lblHints.Text = "Hints: " & hints
+            Dim word As String = words(currentWord)
+            Dim unrevealedCount = CountItem(displayedAnswer, "_")
+            Dim unrevealedIndices(unrevealedCount) As Integer
+            Dim idx = 0
+
+            For unrevealedIndex As Integer = 0 To displayedAnswer.Length - 1
+                If displayedAnswer(unrevealedIndex) = "_" Then
+                    unrevealedIndices(idx) = unrevealedIndex
+                    idx += 1
+                End If
+            Next
+
+            If unrevealedIndices.Count() > 0 Then
+                Dim randomIndex As Integer = unrevealedIndices(rndGen.Next(0, unrevealedIndices.Count))
+                displayedAnswer(randomIndex) = word(randomIndex)
+                lbl_answer.Text = String.Join(" ", displayedAnswer)
+                CheckWinner(word)
+            End If
+
+            If hints <= 0 Then
+                btnHint.Enabled = False
+            End If
+        End If
+    End Sub
+
+    Private Sub CheckWinner(word As String)
+        If String.Join("", displayedAnswer) = word Then
+            MessageBox.Show("Congratulations! You've guessed the word.")
+            points += 5
+            lblScore.Text = "Score: " & points
+            btnNext.Enabled = True
+            btnHint.Enabled = False
+
+            If completed = words.Length Then
+                MessageBox.Show("Game completed!")
+                Me.Close()
+            End If
+        End If
+    End Sub
+
+    Private Function CountItem(array() As String, item As String) As Integer
+        Dim count As Integer = 0
+
+        For i = 0 To array.Length - 1
+            If array(i) = item Then
+                count += 1
+            End If
+        Next
+
+        Return count
+    End Function
 End Class
